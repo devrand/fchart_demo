@@ -1,0 +1,61 @@
+* { margin:0; padding:0; }
+
+body {
+    width:100%;
+    font: 14px/1.5 "Helvetica Neue", "Helvetica", sans-serif;
+    color:#666;
+    background-color:#fff;
+}
+
+#content {
+    position:relative;
+    margin-top:30px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 800px;
+}
+
+h1 {
+    margin-bottom:20px;
+    color:#000;
+}
+
+p {
+    width: 600px;   
+    margin-bottom:20px;
+}
+
+.plot {
+    margin-bottom:20px;
+}
+
+.xset {
+    border-left: 6px solid #f2f2f2;
+    box-sizing: border-box;
+    padding-left:30px;
+    margin-left:-36px;
+}
+
+.drag {
+    margin-bottom:10px;
+    color: #f00;
+    font-weight:bold;
+    text-align:center;
+    animation-name: flashy;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.cross {
+    position:absolute;
+    margin-top:-22px;
+    visibility:hidden;
+}
+
+
+@keyframes flashy {
+  from { color:#f00; }
+  to { color:#700; }
+}
